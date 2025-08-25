@@ -12,7 +12,7 @@ const Footer = () => {
                 </div>
                 <div className="media-icons">
                     <Link href="https://www.facebook.com/profile.php?id=100063979907207" target="_blank"><i className="fab fa-facebook-f"></i></Link>
-                    <Link href="https://www.instagram.com/nybo_official/?hl=id" target="_blank"><i className="fab fa-instagram"></i></Link>
+                    <Link href="https://www.instagram.com/nybo.officiall?utm_source=ig_web_button_share_sheet&igsh=MWFrcmp1NGF4MWN6OQ==" target="_blank"><i className="fab fa-instagram"></i></Link>
                     <Link href="https://www.youtube.com/@IYSAOfficial" target="_blank"><i className="fab fa-youtube"></i></Link>
                     <Link href="https://www.tiktok.com/@iysa.official" target="_blank"><i className="fab fa-tiktok"></i></Link>
                     <Link href="https://www.linkedin.com/company/indonesian-young-scientist-association-iysa" target="_blank"><i className="fab fa-linkedin"></i></Link>
