@@ -42,7 +42,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <br />
         <br />
         <br />
-        <GalleryComp/>
+        {/* <GalleryComp/> */}
         <br />
         <br />
         <br />
