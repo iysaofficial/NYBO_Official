@@ -25,7 +25,7 @@ const NationalOfflineComp: React.FC = () => {
 
   useEffect(() => {
     const scriptURL =
-      "";
+      "https://script.google.com/macros/s/AKfycbwfwn0VMMRamMR29EDTUQTEKGDYxGuwA7L2s6Q9Kg5oXXndyiLQYVocUCQMT8zIUtrOGw/exec";
 
     const form = document.forms.namedItem("regist-form");
     let buttonCounter = 0;
@@ -59,7 +59,7 @@ const NationalOfflineComp: React.FC = () => {
             
             // Redirect after 2 seconds
             setTimeout(() => {
-              window.location.href = "/";
+              window.location.href = "/registration/success";
             }, 2000);
             
           } catch (error) {

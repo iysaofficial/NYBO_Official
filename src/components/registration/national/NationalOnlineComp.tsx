@@ -25,7 +25,7 @@ const NationalOnlineComp: React.FC = () => {
 
   useEffect(() => {
     const scriptURL =
-      "";
+      "https://script.google.com/macros/s/AKfycby4MGanIPzBf0YrDuJgykTLJs4Q_p-bKrcz7wuXDBy4k3diYwriJRP7-x1M-V9u4INC/exec";
 
     const form = document.forms.namedItem("regist-form");
     let buttonCounter = 0;
@@ -59,7 +59,7 @@ const NationalOnlineComp: React.FC = () => {
             
             // Redirect after 2 seconds
             setTimeout(() => {
-              window.location.href = "/";
+              window.location.href = "/registration/success";
             }, 2000);
             
           } catch (error) {
@@ -122,6 +122,8 @@ const NationalOnlineComp: React.FC = () => {
           {/* INFORMASI UMUM SECTION */}
           <InformasiUmumSection />
 
+          <input type="hidden" name="PRICE" value="Rp. 300.000" readOnly />
+          
           {/* Submit Button */}
           <div className="submit-container">
             <button type="submit" className="submit-button">
