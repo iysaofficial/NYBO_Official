@@ -1,7 +1,39 @@
+"use client";
 import '../assets/css/Footer.css'
 import Link from 'next/link';
+import React, { useEffect } from "react";
 
 const Footer = () => {
+    useEffect(() => {
+        const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwfw1dAhzyY6p6crVCCuoEXzb_E7hBOi8cYuIBu_-JZzz2a25h-tCvT6Xd3dUH9Mx2fQA/exec";
+
+        const form = document.forms.namedItem("regist-form");
+
+        if (form) {
+        const handleSubmit = async (e: Event) => {
+            e.preventDefault();
+            try {
+            await fetch(scriptURL, {
+                method: "POST",
+                body: new FormData(form),
+            });
+            alert("Data berhasil dikirim!");
+            form.reset();
+            } catch (error) {
+            console.error("Error:", error);
+            alert("Gagal mengirim data.");
+            }
+        };
+
+        form.addEventListener("submit", handleSubmit);
+
+        // cleanup listener
+        return () => {
+            form.removeEventListener("submit", handleSubmit);
+        };
+        }
+    }, []);
     return(
         <>
         <footer>
@@ -36,9 +68,9 @@ const Footer = () => {
                         <li><Link href='https://wa.me/+6283870026877' target='_blank'>+6283870026877</Link></li>
                     </ul>
                     <ul className="box input-box">
-                        <form action="https://formspree.io/f/xoqgjrok" method="POST">
+                        <form action="" method="POST" name='regist-form'>
                             <li className="link_name">Newsletter</li>
-                            <li><input type="email" name='email' placeholder="Masukan Email Anda" required/></li>
+                            <li><input type="email" name='Email' placeholder="Masukan Email Anda" required/></li>
                             <li><input type="submit" value={"Subscribe"}/></li>
                         </form>
                     </ul>
