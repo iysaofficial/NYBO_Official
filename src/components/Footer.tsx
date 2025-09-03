@@ -8,7 +8,7 @@ const Footer = () => {
         const scriptURL =
         "https://script.google.com/macros/s/AKfycbwfw1dAhzyY6p6crVCCuoEXzb_E7hBOi8cYuIBu_-JZzz2a25h-tCvT6Xd3dUH9Mx2fQA/exec";
 
-        const form = document.forms.namedItem("regist-form");
+        const form = document.forms.namedItem("footer-newsletter");
 
         if (form) {
         const handleSubmit = async (e: Event) => {
@@ -68,7 +68,7 @@ const Footer = () => {
                         <li><Link href='https://wa.me/+6283870026877' target='_blank'>+6283870026877</Link></li>
                     </ul>
                     <ul className="box input-box">
-                        <form action="" method="POST" name='regist-form'>
+                        <form action="" method="POST" name='footer-newsletter'>
                             <li className="link_name">Newsletter</li>
                             <li><input type="email" name='Email' placeholder="Masukan Email Anda" required/></li>
                             <li><input type="submit" value={"Subscribe"}/></li>

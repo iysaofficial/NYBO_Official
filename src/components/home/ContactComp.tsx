@@ -1,6 +1,39 @@
+"use client";
+import React, { useEffect } from "react";
 import Link from "next/link"
 
 const ContactComp = () =>{
+    useEffect(() => {
+        const scriptURL =
+        "https://script.google.com/macros/s/AKfycbzdgUOy_s6zjJQTgqXQ7GX3H1_w6TvWq1hsBZgH0mSREWt3qXCKA34-qo74-jfDVbHE/exec";
+
+        const form = document.forms.namedItem("home-contact");
+
+        if (form) {
+        const handleSubmit = async (e: Event) => {
+            e.preventDefault();
+            try {
+            await fetch(scriptURL, {
+                method: "POST",
+                body: new FormData(form),
+            });
+            alert("Pesan berhasil dikirim!");
+            form.reset();
+            } catch (error) {
+            console.error("Error:", error);
+            alert("Gagal mengirim Pesan.");
+            }
+        };
+
+        form.addEventListener("submit", handleSubmit);
+
+        // cleanup listener
+        return () => {
+            form.removeEventListener("submit", handleSubmit);
+        };
+        }
+    }, []);
+
     return(
         <>
         <section className="contact-section" id="contact">
@@ -30,15 +63,15 @@ const ContactComp = () =>{
                     <div className="right-side">
                         <div className="topic-text">Kirimkan pesan kepada kami</div>
                         {/* <p>If you have any work from me or any types of quries related to my tutorial, you can send me message from here. it's my pleasure to help you.</p> */}
-                        <form action="https://formspree.io/f/mvoebvrd" method="POST">
+                        <form action="" method="POST" name="home-contact">
                             <div className="input-box">
-                                <input type="text" name="name" placeholder="Masukan Nama Anda"/>
+                                <input type="text" name="Name" placeholder="Masukan Nama Anda"/>
                             </div>
                             <div className="input-box">
-                                <input type="email" name="email" placeholder="Masukan Email Anda"/>
+                                <input type="email" name="Email" placeholder="Masukan Email Anda"/>
                             </div>
                             <div className="input-box message-box">
-                                <textarea placeholder="Tulis Pesan" name="message"></textarea>
+                                <textarea placeholder="Tulis Pesan" name="Message"></textarea>
                             </div>
                             <div className="button">
                                 <input type="submit" value={"Kirim"}/>
