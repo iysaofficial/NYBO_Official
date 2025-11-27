@@ -107,7 +107,7 @@ const NavbarComp = () =>{
                     </li>
                     
                     <li className='menu-item'>
-                        <Link href="https://drive.google.com/file/d/1Ekl-syDhHTnDrv50rlmUk6FVDEhtqcm8/view?usp=sharing" 
+                        <Link href="https://drive.google.com/file/d/1xYjD7eKhVKuHdiS3SH4JJzJB0_inKgEq/view?usp=sharing" 
                             target='_blank'
                             rel="noopener noreferrer">
                                 Buku Panduan

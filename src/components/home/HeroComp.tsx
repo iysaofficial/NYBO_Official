@@ -8,9 +8,9 @@ const HeroComp = () =>{
                 <img src="/assets/images/logo/NYBO.png" alt="" />
                 <div className="hero-text">
                     <h1>National Youth Biology Olympiad</h1>
-                    {/* <p>Pendaftaran National Youth Biology Olympiad telah dibuka! Bergabunglah dengan acara bergengsi ini dan dapatkan pengalaman yang tak terlupakan!</p> */}
+                    <p>Pendaftaran National Youth Biology Olympiad telah dibuka! Bergabunglah dengan acara bergengsi ini dan dapatkan pengalaman yang tak terlupakan!</p>
                     <br />
-                    <Link href="#">Segera Hadir 2026</Link>
+                    <Link href="/registration">registrasi</Link>
                 </div>
             </div>
         </section>
