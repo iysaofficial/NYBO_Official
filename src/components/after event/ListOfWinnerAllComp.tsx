@@ -11,6 +11,16 @@ const ListOfWinnerAllComp = () => {
                         <i className="fa-solid fa-trophy"></i>
                     </div>
                     <div className="text">
+                        <Link href="/after-event/2026">Daftar Pemenang 2026</Link>
+                    </div>
+                </div>
+            </div>
+            <div className="box">
+                <div className="content">
+                    <div className="icon">
+                        <i className="fa-solid fa-trophy"></i>
+                    </div>
+                    <div className="text">
                         <Link href="/after-event/2025">Daftar Pemenang 2025</Link>
                     </div>
                 </div>
