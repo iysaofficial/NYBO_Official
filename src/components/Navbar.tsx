@@ -148,6 +148,13 @@ const NavbarComp = () =>{
                         <Link className='sub-btn' href="#">Sertifikat Supervisor <i className='fas fa-angle-down'></i></Link>
                         <ul className='sub-menu'>
                             <li className='sub-item'>
+                                <Link href="https://drive.google.com/drive/u/0/folders/1Eeo7IyqwqjGOO1Z5UbTss2QNk95yKdss" 
+                                    target='_blank'
+                                    rel="noopener noreferrer">
+                                        Sertifikat Supervisor 2026
+                                </Link>
+                            </li>
+                            <li className='sub-item'>
                                 <Link href="https://drive.google.com/drive/folders/1_Ovb4hDq3d-i6ZnM796WH-unaaFptU2m?usp=sharing" 
                                     target='_blank'
                                     rel="noopener noreferrer">
