@@ -4,12 +4,12 @@ const AfterEventComp = () =>{
         <section className="after-event-section" id="after-event">
             <div className="after-event-container">
                 <div className="after-event-heading">
-                    <h1 className="section-header">After Event IYBO NYBO 2025</h1>
+                    <h1 className="section-header">After Event 2026</h1>
                 </div>
                 <div className="after-event-row">
 
                     <div className="tes-vidio">
-                        <iframe className="mt-5"  width="100%" height="415" src="https://www.youtube.com/embed/qMS8JGYShT0?si=8JaVRVSc-f2iLxgN" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                        <iframe className="mt-5"  width="100%" height="415" src="https://www.youtube.com/embed/05RdQgvQiVY?si=Dgv7dSG3DGG2dbTX" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                     </div>
 
                     <div className="tes-p">
