@@ -135,14 +135,15 @@ const NavbarComp = () =>{
                             <li className='sub-item'><a href="https://drive.google.com/file/d/1IAkodP-yY31PKFKaIwzdGlVrDFyTy712/view?usp=drive_link" target='_blank'>Daftar Pemenang 2024</a></li>
                         </ul> */}
                     </li>
-{/* 
+
                     <li className='menu-item'>
                         <a className='sub-btn' href="#">Kurasi <i className='fas fa-angle-down'></i></a>
                         <ul className='sub-menu'>
+                            <li className='sub-item'><a href="https://drive.google.com/drive/u/0/folders/15_kE3lTU2XfPHkPEVVXMWTOvrh4AntOL" target='_blank'>Kurasi 2026</a></li>
                             <li className='sub-item'><a href="https://drive.google.com/drive/folders/1GX6vTuVSFexUabNK4Gx0J86kSBhNeNJ3?usp=sharing" target='_blank'>Kurasi 2025</a></li>
                             <li className='sub-item'><a href="https://drive.google.com/drive/u/0/folders/1LtvfFSoW9h0ItVOfgDuRs7eMsroyHrtw" target='_blank'>Kurasi 2024</a></li>
                         </ul>
-                    </li> */}
+                    </li>
                     
                     <li className='menu-item'>
                         <Link className='sub-btn' href="#">Sertifikat Supervisor <i className='fas fa-angle-down'></i></Link>
